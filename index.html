@@ -30,12 +30,12 @@ button,a,summary{-webkit-tap-highlight-color:transparent}button:active,a:active,
 .steam path:nth-child(3){animation-delay:2.3s}
 @keyframes steamRise{0%{stroke-dashoffset:150;opacity:0}22%{opacity:.6}72%{opacity:.6}100%{stroke-dashoffset:0;opacity:0}}
 /* Body, handle and coffee surface travel as one cup. The 3.2s loop is visible without feeling jumpy. */
-.cup-illustration{position:absolute;left:50%;top:15%;width:230px;height:280px;transform-origin:50% 84%;animation:cupFloat 3.2s ease-in-out infinite;will-change:transform}
+.cup-illustration{position:absolute;left:50%;top:15%;width:230px;height:280px;transform-origin:50% 84%;animation:cupFloat 3.2s ease-in-out infinite;will-change:transform;z-index:1}
 .cup-body{position:absolute;inset:0;background:#a36a42;border:3px solid #e8dfc8;border-radius:0 0 105px 105px;z-index:1}
 .cup-handle{position:absolute;width:72px;height:82px;left:calc(100% - 8px);top:29%;border:3px solid #e8dfc8;border-radius:0 60px 60px 0}
 .cup-coffee{position:absolute;left:4px;right:4px;top:-9px;height:19px;border:3px solid #e8dfc8;border-radius:50%;background:#543826;z-index:2}
 @keyframes cupFloat{0%,100%{transform:translate(-50%,0) rotate(-7deg)}50%{transform:translate(-50%,-15px) rotate(0deg)}}
-.steam{animation:steamFollow 3.2s ease-in-out infinite}
+.steam{animation:steamFollow 3.2s ease-in-out infinite;z-index:0}
 @keyframes steamFollow{0%,100%{transform:translate(-50%,0) rotate(-7deg)}50%{transform:translate(-50%,-8px) rotate(0deg)}}
 @media(max-width:700px){.cup-illustration{width:170px;height:195px;top:28px}.cup-body{border-radius:0 0 80px 80px}.cup-handle{width:52px;height:63px;left:calc(100% - 9px);top:53px}.cup-coffee{height:16px;top:-8px}}
 @media(prefers-reduced-motion:reduce){.steam,.steam path,.cup-illustration{animation:none}.cup-illustration{transform:translate(-50%,0) rotate(-7deg)}.burst-dot{display:none}}
