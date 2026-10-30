@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zyqor-stillroom.vercel.app/sitemap.xml
