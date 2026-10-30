@@ -1,0 +1,1197 @@
+<!doctype html><html lang="en"><head>
+<link rel="preload" as="image" href="cup.webp" fetchpriority="high"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Stillroom | Coffee menu concept</title><meta name="description" content="A fictional coffee shop menu concept by ZYQOR Studio. Filter drinks and build a sample order."><style>
+:root{--bg:#e9e4d8;--ink:#252820;--green:#415340;--muted:#575c52;--line:#b9b8a9;--cream:#f3f0e7}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 'Work Sans',Arial,sans-serif}button{font:inherit}a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid #a25c37;outline-offset:3px}.wrap{max-width:1160px;margin:auto;padding:0 32px}.nav{height:80px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--ink)}.brand{font:normal 35px 'Newsreader',Georgia,serif;letter-spacing:-.06em;text-decoration:none}.nav-links{display:flex;gap:28px;font-size:13px;font-weight:bold;text-transform:uppercase;letter-spacing:.08em}.nav-links a{text-decoration:none}.concept{font-size:11px;letter-spacing:.13em;text-transform:uppercase;font-weight:bold;color:var(--green)}.hero{padding:75px 0 72px;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:end}.hero h1,.section h2,.order h2{font:normal clamp(62px,8vw,112px)/.97 'Newsreader',Georgia,serif;letter-spacing:-.065em;margin:22px 0}.hero h1 em{color:var(--green);font-weight:normal}.hero p{max-width:420px;font-size:21px;line-height:1.45;margin:0 0 20px}.hero-art{height:480px;background:#394b3b;position:relative;overflow:hidden;display:flex;align-items:end;padding:35px;color:#eeeade}.hero-art span{position:relative;z-index:1;letter-spacing:.13em;font-size:11px;font-weight:bold}.section{padding:44px 0 88px;border-top:1px solid var(--ink)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px}.section h2{font-size:clamp(48px,6vw,80px);margin:14px 0 30px}.section-head p{max-width:290px;margin-bottom:36px;color:var(--muted)}.filters{display:flex;gap:8px;flex-wrap:wrap;padding:0 0 28px}.filters button{border:1px solid var(--green);background:transparent;color:var(--ink);padding:11px 17px;cursor:pointer;min-height:44px}.filters button[aria-pressed="true"]{background:var(--green);color:#fff}.item{display:grid;grid-template-columns:58px 1fr auto auto;gap:20px;align-items:center;padding:23px 0;border-top:1px solid var(--line)}.item-number{font:normal 15px 'Newsreader',Georgia,serif;color:var(--green)}.item h3{font:normal 28px 'Newsreader',Georgia,serif;letter-spacing:-.035em;margin:0 0 4px}.item p{color:var(--muted);margin:0;font-size:14px}.price{font-weight:bold}.item button{background:transparent;border:1px solid var(--ink);padding:9px 16px;min-height:44px;cursor:pointer}.order{display:grid;grid-template-columns:1fr 1fr;gap:50px;padding:50px 0 90px;border-top:1px solid var(--ink)}.order h2{font-size:52px}.order p{color:var(--muted);max-width:370px}.receipt{background:var(--cream);padding:32px;border:1px solid var(--ink);min-height:200px}.receipt h3{font:normal 25px 'Newsreader',Georgia,serif;margin:0 0 15px}.receipt ul{list-style:none;margin:0;padding:0}.receipt li{display:flex;justify-content:space-between;gap:15px;padding:12px 0;border-bottom:1px solid var(--line)}.receipt button{border:0;background:transparent;text-decoration:underline;cursor:pointer;padding:0}.total{display:flex;justify-content:space-between;font-weight:bold;padding-top:15px}.footer{border-top:1px solid var(--ink);padding:25px 0 45px;font-size:12px;display:flex;justify-content:space-between;gap:25px}.footer a{margin-left:20px}.policies{border-top:1px solid var(--line);padding:22px 0 55px;display:flex;gap:45px;font-size:13px}.policies details{flex:1}.policies summary{cursor:pointer;font-weight:bold}.policies p{max-width:450px;color:var(--muted)}@media(max-width:700px){.wrap{padding:0 20px}.nav{height:68px}.brand{font-size:29px}.nav-links{gap:12px;font-size:11px}.hero{padding:47px 0 55px;display:block}.hero h1{font-size:66px}.hero p{font-size:18px}.hero-art{height:310px;margin-top:35px;padding:22px;align-items:end}.hero-art span{font-size:10px;line-height:1.5;max-width:100%}.section-head{display:block}.section-head p{margin:0 0 25px}.item{grid-template-columns:30px 1fr auto;gap:10px}.item h3{font-size:23px}.item p{font-size:13px}.item button{grid-column:2 / 4;justify-self:start}.order{display:block}.receipt{margin-top:25px}.footer,.policies{display:block}.footer a{display:inline-block;margin:12px 16px 0 0}.policies details+details{margin-top:15px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+button,a,summary{-webkit-tap-highlight-color:transparent}button:active,a:active,summary:active{opacity:.65}button:disabled{cursor:default;opacity:.55}.feedback{font-size:13px;min-height:1.4em;margin:9px 0 0;color:var(--green)}.loading{color:var(--muted);padding:20px 0;border-top:1px solid var(--line)}.hero,.section-head{animation:arrive .4s ease-out both}@keyframes arrive{from{opacity:.6;transform:translateY(8px)}to{opacity:1;transform:none}}@media(prefers-reduced-motion:reduce){.hero,.section-head{animation:none}}
+
+/* Rich but restrained motion: staggered entrances, scroll reveals, clear click feedback. */
+.filters button,.item button{transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .12s ease,background-size .32s cubic-bezier(.2,.7,.3,1)}
+.filters button:active,.item button:active{transform:scale(.94)}
+@keyframes itemIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+#menu-items .item.enter{animation:itemIn .45s cubic-bezier(.2,.7,.3,1) both}
+@keyframes lineIn{from{opacity:0;transform:translateX(-16px)}to{opacity:1;transform:none}}
+#order-items li.new{animation:lineIn .4s ease-out both}
+@keyframes feedbackIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+.feedback.show{animation:feedbackIn .3s ease-out both}
+.hero>div{animation:arrive .55s ease-out both}
+.hero>div:nth-child(2){animation-delay:.15s}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.3,1)}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}#menu-items .item.enter,#order-items li.new,.feedback.show,.hero>div{animation:none}.filters button,.item button{transition:none}}
+
+/* Premium interaction pass: fly-to-order chip, click burst, count-up total, rising steam, a visibly moving cup. */
+.item button{background-image:linear-gradient(var(--green),var(--green));background-repeat:no-repeat;background-size:0% 100%}
+.item button.added{background-size:100% 100%;border-color:var(--green);color:#fff}
+.fly-chip{position:fixed;z-index:60;background:var(--green);color:#f3f0e7;font-size:12px;font-weight:bold;letter-spacing:.04em;padding:8px 14px;border:1px solid var(--ink);pointer-events:none;white-space:nowrap}
+.burst-dot{position:fixed;width:5px;height:5px;z-index:60;pointer-events:none;animation:burstGo .55s ease-out forwards}
+@keyframes burstGo{to{transform:translate(var(--dx),var(--dy)) scale(.2);opacity:0}}
+.steam{position:absolute;left:50%;top:calc(23% - 96px);width:120px;height:100px;transform:translateX(-50%);fill:none;stroke:#f1e8d5;stroke-width:3.8;stroke-linecap:round;z-index:0;overflow:visible;pointer-events:none}
+.steam path{opacity:0;animation:steamRise 4.6s cubic-bezier(.45,0,.55,1) infinite;will-change:transform,opacity}
+.steam path:nth-child(2){animation-delay:-1.53s}
+.steam path:nth-child(3){animation-delay:-3.07s}
+@keyframes steamRise{0%{opacity:0;transform:translateY(8px)}25%{opacity:.85}65%{opacity:.7}100%{opacity:0;transform:translateY(-22px)}}
+/* Body, handle and coffee surface travel as one cup. The 3.2s loop is visible without feeling jumpy. */
+.cup-illustration{position:absolute;left:50%;top:14%;width:280px;transform-origin:50% 90%;animation:cupFloat 4.6s cubic-bezier(.45,0,.55,1) infinite;will-change:transform;z-index:1}
+.cup-body{position:absolute;inset:0;background:#a36a42;border:3px solid #e8dfc8;border-radius:0 0 105px 105px;z-index:1}
+.cup-handle{position:absolute;width:72px;height:82px;left:calc(100% - 8px);top:29%;border:3px solid #e8dfc8;border-radius:0 60px 60px 0}
+.cup-coffee{position:absolute;left:4px;right:4px;top:-9px;height:19px;border:3px solid #e8dfc8;border-radius:50%;background:#543826;z-index:2}
+@keyframes cupFloat{0%,100%{transform:translate(-50%,0) rotate(-4.5deg)}50%{transform:translate(-50%,-13px) rotate(0deg)}}
+.steam{animation:steamFollow 4.6s cubic-bezier(.45,0,.55,1) infinite}
+@keyframes steamFollow{0%,100%{transform:translate(-50%,0) rotate(-4.5deg)}50%{transform:translate(-50%,-7px) rotate(0deg)}}
+@media(max-width:700px){.steam{width:92px;height:76px;top:2px;stroke-width:4.4}.cup-illustration{width:200px;top:60px}.cup-body{border-radius:0 0 80px 80px}.cup-handle{width:52px;height:63px;left:calc(100% - 9px);top:53px}.cup-coffee{height:16px;top:-8px}}
+@media(prefers-reduced-motion:reduce){.steam,.steam path,.cup-illustration{animation:none}.steam path{opacity:.85;transform:none}.cup-illustration{transform:translate(-50%,0) rotate(-4.5deg)}.burst-dot{display:none}}
+</style><style>
+/* Premium boot loader */
+.boot{position:fixed;inset:0;z-index:9999;background:#e9e4d8;color:#252820;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;transition:transform .72s cubic-bezier(.76,0,.24,1)}
+.boot-hide{transform:translateY(-101%)}
+.boot-mark{font:normal 44px 'Newsreader',Georgia,serif;letter-spacing:-.06em;margin:0}
+.boot-mark em{color:#415340;font-style:normal}
+.boot-kick{font:bold 10px 'Work Sans',Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#415340}
+.boot-bar{width:min(200px,56vw);height:2px;background:rgba(37,40,32,.16);overflow:hidden;}
+.boot-bar i{display:block;height:100%;width:0;background:#415340;animation:bootBar 1.05s cubic-bezier(.2,.7,.3,1) forwards}
+.boot-hide .boot-bar i{animation:none;width:100%;transition:width .16s ease}
+@keyframes bootBar{to{width:84%}}
+@media(prefers-reduced-motion:reduce){.boot{transition:none}.boot-bar i{animation:none;width:100%}}
+
+.steam path{stroke:url(#steamFadeG)}.steam path:nth-child(4){animation-delay:-2.3s}
+/* Press feedback on every control */
+a,button,summary,select,[role="button"]{transition:transform .14s ease}
+a:active,button:active,summary:active,select:active,[role="button"]:active{transform:scale(.95)}
+@media(prefers-reduced-motion:reduce){a,button,summary,select,[role="button"]{transition:none}a:active,button:active,summary:active,select:active,[role="button"]:active{transform:none}}
+</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet"><style id="design-pass">
+/* Style: Claymorphism (soft, tactile, pillowy). Roles: cream #f4e9dc bg / surface #fff6ea / cocoa #43291f text / muted #78594b / terracotta #b5532f primary / sage #b9d1b0 secondary / butter #f2c879 accent. Shadows are the style here: outer soft light+dark pair plus inner bevel. */
+:root{--bg:#f4e9dc;--ink:#43291f;--green:#b5532f;--muted:#78594b;--line:#e6d3c0;--cream:#fff6ea;--sage:#b9d1b0;--butter:#f2c879;
+--clay:8px 8px 20px rgba(150,100,70,.28),-8px -8px 18px rgba(255,255,255,.85),inset -3px -3px 8px rgba(150,100,70,.10),inset 3px 3px 8px rgba(255,255,255,.75);
+--clay-s:5px 5px 12px rgba(150,100,70,.26),-5px -5px 12px rgba(255,255,255,.85),inset -2px -2px 5px rgba(150,100,70,.10),inset 2px 2px 5px rgba(255,255,255,.7);
+--clay-in:inset 5px 5px 12px rgba(120,60,30,.35),inset -4px -4px 10px rgba(255,160,110,.35)}
+body{background:var(--bg);color:var(--ink);font-family:'Nunito',Arial,sans-serif;font-weight:400;font-size:17px}
+.brand,.hero h1,.section h2,.order h2,.item h3,.receipt h3,.boot-mark{font-family:'Young Serif',Georgia,serif;font-weight:400;letter-spacing:-.01em}
+.wrap{max-width:1180px;padding:0 32px}
+.nav{height:auto;padding:24px 0;border:0}
+.brand{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;font-size:28px;background:var(--cream);border-radius:999px;box-shadow:var(--clay-s)}
+.nav-links{gap:12px}
+.nav-links a{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:999px;background:var(--cream);box-shadow:var(--clay-s);font-size:13px;font-weight:800;letter-spacing:.06em}
+.concept{display:inline-block;padding:8px 16px;border-radius:999px;background:var(--butter);color:var(--ink);font-size:11px;font-weight:800;letter-spacing:.1em;box-shadow:var(--clay-s)}
+.hero{padding:48px 0 96px;gap:56px;align-items:center}
+.hero h1{font-size:clamp(52px,7vw,92px);line-height:1.02;margin:28px 0}
+.hero h1 em{color:var(--green);font-style:normal}
+.hero p{font-size:20px;color:var(--muted)}
+.hero>div>a{display:inline-flex;align-items:center;min-height:56px;padding:0 32px;border:0;border-radius:999px;background:var(--green);color:#fff;font-weight:800;text-decoration:none;box-shadow:var(--clay-s);margin-top:8px}
+.hero-art{height:500px;border-radius:56px;background:var(--sage);box-shadow:var(--clay);overflow:hidden;align-items:flex-end;justify-content:center;padding:32px}
+.hero-art::before{content:"";position:absolute;width:190px;height:190px;border-radius:50%;background:var(--butter);right:-40px;top:-40px;box-shadow:var(--clay-s)}
+.hero-art::after{content:"";position:absolute;width:150px;height:150px;border-radius:46% 54% 60% 40%;background:#e7a07f;left:-30px;bottom:48px;box-shadow:var(--clay-s)}
+.cup-illustration img{filter:drop-shadow(0 18px 14px rgba(67,41,31,.28))}
+.hero-art span{color:var(--ink);font-weight:800;position:relative;z-index:2;background:var(--cream);padding:8px 16px;border-radius:999px;font-size:11px}
+.steam{stroke:#fff6ea}
+.section{border:0;padding:32px 0 96px}
+.section h2,.order h2{font-size:clamp(40px,5vw,64px);margin:20px 0 16px}
+.section-head p{color:var(--muted)}
+.filters{gap:12px;padding:8px 0 32px}
+.filters button{min-height:52px;padding:0 24px;border:0;border-radius:999px;background:var(--cream);color:var(--ink);font-weight:800;box-shadow:var(--clay-s)}
+.filters button[aria-pressed="true"]{background:var(--green);color:#fff;box-shadow:var(--clay-in)}
+.item{display:grid;grid-template-columns:64px 1fr auto auto;gap:24px;align-items:center;margin:0 0 20px;padding:20px 24px;border:0;border-radius:36px;background:var(--cream);box-shadow:var(--clay)}
+.item-number{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--sage);box-shadow:var(--clay-s);font:400 20px 'Young Serif',serif;color:var(--ink)}
+.item h3{font-size:26px}
+.item p{color:var(--muted);font-size:15px}
+.price{font-weight:800;font-size:19px;font-variant-numeric:tabular-nums}
+.item button{min-width:104px;min-height:52px;border:0;border-radius:999px;background-color:var(--green);color:#fff;font-weight:800;box-shadow:var(--clay-s);background-image:linear-gradient(#5f7f58,#5f7f58);background-repeat:no-repeat;background-size:0% 100%}
+.item button.added{background-size:100% 100%;color:#fff;border:0}
+.order{border:0;padding:16px 0 96px;gap:48px;align-items:center}
+.order p{color:var(--muted)}
+.receipt{background:var(--cream);border:0;border-radius:44px;padding:36px;box-shadow:var(--clay)}
+.receipt li{border-bottom:2px dashed var(--line);align-items:center}
+.receipt li button{min-height:44px;min-width:44px;font-weight:800;color:var(--green)}
+.total{font-size:20px;font-weight:800;padding-top:20px}
+.feedback{color:#3f6a3a;font-weight:700}
+.footer{border:0;padding:24px 0 8px;font-size:13px;color:var(--muted)}
+.footer a,.policies summary{display:inline-flex;align-items:center;min-height:44px}
+.footer a{margin-left:8px;padding:0 16px;border-radius:999px;background:var(--cream);box-shadow:var(--clay-s);font-weight:700;text-decoration:none;color:var(--ink)}
+.policies{border:0;gap:20px;padding:16px 0 64px}
+.policies details{background:var(--cream);border-radius:28px;padding:4px 24px;box-shadow:var(--clay-s)}
+.policies summary{font-weight:800}
+.policies p{color:var(--muted);padding-bottom:16px}
+.fly-chip{border-radius:999px;border:0;background:var(--green);box-shadow:var(--clay-s)}
+.burst-dot{border-radius:50%}
+.boot{background:#f4e9dc;color:#43291f}.boot-mark em,.boot-kick{color:#a84a29}.boot-bar{background:#e6d3c0;border-radius:999px}.boot-bar i{background:#b5532f;border-radius:999px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #43291f;outline-offset:3px}
+@media(max-width:700px){.wrap{padding:0 20px}.nav{padding:16px 0}.brand{font-size:24px;padding:0 18px}.nav-links{gap:8px}.nav-links a{padding:0 14px;font-size:11px}.hero{padding:32px 0 64px}.hero-art{height:340px;border-radius:40px;margin-top:32px}.hero-art::before{width:130px;height:130px}.hero-art::after{width:100px;height:100px;bottom:40px}.item{grid-template-columns:48px 1fr auto;gap:12px 16px;padding:20px;border-radius:32px}.item-number{width:48px;height:48px;font-size:17px}.item button{grid-column:1/4;width:100%}.receipt{padding:28px;border-radius:36px}.footer{display:block}.footer a{display:inline-flex;margin:8px 8px 0 0}.policies details+details{margin-top:0}}
+</style><style id="no-loops">.sr-blob,.sr-blob--butter,.sr-blob--sage,.sr-blob--terracotta,.steam{display:none!important;animation:none!important}.cup-illustration{animation:none!important;transform:translate(-50%,0) rotate(0deg)!important;will-change:auto!important}</style><link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2212%22%20fill%3D%22%23f5ede3%22/%3E%3Ctext%20x%3D%2232%22%20y%3D%2244%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2244%22%20font-weight%3D%22bold%22%20fill%3D%22%23c25e3a%22%20text-anchor%3D%22middle%22%3Es%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Stillroom | Coffee menu concept">
+<meta property="og:description" content="A fictional coffee shop menu concept by ZYQOR Studio. Filter drinks and build a sample order.">
+<meta property="og:image" content="https://zyqor-stillroom.vercel.app/og.jpg">
+<link rel="canonical" href="https://zyqor-stillroom.vercel.app/">
+<meta property="og:url" content="https://zyqor-stillroom.vercel.app/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Stillroom | Coffee menu concept">
+<meta name="twitter:description" content="A fictional coffee shop menu concept by ZYQOR Studio. Filter drinks and build a sample order.">
+<meta name="twitter:image" content="https://zyqor-stillroom.vercel.app/og.jpg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#e9e4d8">
+</head><body><div class="boot" id="boot" role="status" aria-label="Loading"><p class="boot-kick">THE SLOW CUP / MENU CONCEPT</p><p class="boot-mark">stillroom.</p><div class="boot-bar"><i></i></div></div><noscript><style>.boot{display:none!important}</style></noscript><div class="wrap"><header class="nav"><a class="brand" href="#top">stillroom.</a><nav class="nav-links" aria-label="Main navigation"><a href="#menu">Menu</a><a href="#order">Sample order</a></nav></header><main id="top"><section class="hero"><div><span class="concept">A ZYQOR Studio concept / fictional brand</span><h1>Take your <em>time.</em><br>Good coffee will wait.</h1><p>An editorial menu built to make the everyday ritual feel a little less rushed.</p><a href="#menu">Explore the sample menu ↓</a></div><div class="hero-art" role="img" aria-label="Illustration of a ceramic coffee cup on dark green"><div class="cup-illustration" aria-hidden="true"><img src="cup.webp" fetchpriority="high" decoding="async" alt="" width="560" height="434" style="width:100%;height:auto;display:block"/></div><svg class="steam" viewBox="0 0 120 100" aria-hidden="true"><defs><linearGradient id="steamFadeG" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#f1e8d5" stop-opacity=".95"/><stop offset=".65" stop-color="#f1e8d5" stop-opacity=".45"/><stop offset="1" stop-color="#f1e8d5" stop-opacity="0"/></linearGradient></defs><path stroke-width="4.2" d="M24 92 C18 78 30 70 24 56 C18 42 30 34 24 18"/><path stroke-width="3.4" d="M52 96 C46 80 60 72 52 56 C44 40 58 32 52 14"/><path stroke-width="3.8" d="M80 92 C74 78 86 70 80 56 C74 42 86 34 80 18"/><path stroke-width="3" d="M104 88 C99 76 109 68 104 54 C99 40 109 32 104 20"/></svg><span>THE SLOW CUP / MENU CONCEPT</span></div></section><section class="section" id="menu"><div class="section-head"><div><span class="concept">01 / THE MENU</span><h2>Choose your cup.</h2></div><p>Fictional drinks and sample prices for this interactive design demo. No orders are placed.</p></div><div class="filters" role="group" aria-label="Filter drinks"><button type="button" data-filter="all" aria-pressed="true">Everything</button><button type="button" data-filter="hot" aria-pressed="false">Hot</button><button type="button" data-filter="iced" aria-pressed="false">Iced</button><button type="button" data-filter="tea" aria-pressed="false">Tea</button></div><div id="menu-items" aria-live="polite"><p class="loading" role="status">Loading the menu…</p></div></section><section class="order" id="order"><div><span class="concept">02 / JUST A PREVIEW</span><h2>Your sample order.</h2><p>Add drinks to see the order and total change. This is a front-end concept, not a checkout. No account, payment or real order.</p></div><div class="receipt" aria-live="polite"><h3>On your list</h3><ul id="order-items"><li>Choose a drink above to start.</li></ul><p id="order-feedback" class="feedback" role="status" aria-live="polite"></p><div class="total"><span>Sample total</span><span id="total">₹0</span></div></div></section></main><footer class="footer"><span>Stillroom is a fictional portfolio concept by ZYQOR Studio.</span><div><a href="mailto:zyqorbusiness@gmail.com">Contact the designer</a><a href="#privacy">Privacy</a><a href="#terms">Terms</a></div></footer><div class="policies"><details id="privacy"><summary>Privacy</summary><p>This demo runs in your browser. Menu choices are not saved or sent to a server. Fonts load from Google Fonts. The email link opens your mail app; sending a message is your choice.</p></details><details id="terms"><summary>Terms</summary><p>This is a fictional design and interaction demo. Prices are illustrative only. No products are sold and no order can be placed here.</p></details></div></div><script>
+const drinks=[{name:'House espresso',note:'Short, direct, chocolate finish',category:'hot',price:140},{name:'Oat flat white',note:'Double espresso, steamed oat milk',category:'hot',price:220},{name:'Slow brew',note:'Hand-poured, light and clean',category:'hot',price:190},{name:'Iced black',note:'Cold espresso, water, clear ice',category:'iced',price:180},{name:'Brown sugar iced latte',note:'Espresso, milk, a touch of sweetness',category:'iced',price:250},{name:'Mint tea',note:'Fresh mint, slow steep',category:'tea',price:150}];
+let filter='all',cart=[],animateMenu=true,newLiIndex=-1;
+const money=n=>'₹'+n;
+const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const pulse=el=>{if(reduceMotion||!el||!el.animate)return;el.animate([{transform:'scale(1)'},{transform:'scale(1.22)'},{transform:'scale(1)'}],{duration:330,easing:'ease-out'})};
+const flash=el=>{if(reduceMotion||!el||!el.animate)return;el.animate([{backgroundColor:'rgba(65,83,64,0)'},{backgroundColor:'rgba(65,83,64,.16)'},{backgroundColor:'rgba(65,83,64,0)'}],{duration:600,easing:'ease-out'})};
+const totalEl=document.querySelector('#total');
+const setTotal=v=>{totalEl.textContent=money(v)};
+const tweenTotal=(from,to)=>{if(reduceMotion||from===to){setTotal(to);return}const t0=performance.now(),dur=520;const step=t=>{const k=Math.min((t-t0)/dur,1);const e=1-Math.pow(1-k,3);setTotal(Math.round(from+(to-from)*e));if(k<1)requestAnimationFrame(step)};requestAnimationFrame(step)};
+const bumpReceipt=()=>{if(reduceMotion)return;const r=document.querySelector('.receipt');if(r&&r.animate)r.animate([{transform:'scale(1)'},{transform:'scale(1.022)'},{transform:'scale(1)'}],{duration:300,easing:'ease-out'})};
+const burst=r=>{if(reduceMotion)return;const x=r.left+r.width/2,y=r.top+r.height/2,colors=['#415340','#252820','#a36a42'];for(let n=0;n<7;n++){const p=document.createElement('i');p.className='burst-dot';const a=Math.random()*Math.PI*2,dist=24+Math.random()*28;p.style.setProperty('--dx',Math.cos(a)*dist+'px');p.style.setProperty('--dy',Math.sin(a)*dist+'px');p.style.background=colors[n%3];p.style.left=x+'px';p.style.top=y+'px';document.body.appendChild(p);setTimeout(()=>p.remove(),600)}};
+const flyChip=(from,to,label,done)=>{const chip=document.createElement('div');chip.className='fly-chip';chip.textContent=label;const x0=from.left+from.width/2,y0=from.top+from.height/2,x1=to.left+to.width/2,y1=to.top+Math.min(to.height*.3,70);chip.style.left=x0+'px';chip.style.top=y0+'px';document.body.appendChild(chip);const cx=(x0+x1)/2,cy=Math.min(y0,y1)-80,t0=performance.now(),dur=640;const anim=t=>{const k=Math.min((t-t0)/dur,1),e=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2,m=1-e;chip.style.transform=`translate(-50%,-50%) translate(${2*m*e*(cx-x0)+e*e*(x1-x0)}px,${2*m*e*(cy-y0)+e*e*(y1-y0)}px) scale(${1-.5*e})`;chip.style.opacity=k>.78?String(1-(k-.78)/.22):'1';if(k<1)requestAnimationFrame(anim);else{chip.remove();done()}};requestAnimationFrame(anim)};
+let skipTotal=false;
+function setFeedback(msg){const f=document.querySelector('#order-feedback');f.textContent=msg;f.classList.remove('show');void f.offsetWidth;f.classList.add('show')}
+function render(){
+  const shown=drinks.map((d,i)=>({...d,i})).filter(d=>filter==='all'||d.category===filter);
+  document.querySelector('#menu-items').innerHTML=shown.map((d,k)=>`<article class="item${animateMenu?' enter':''}"${animateMenu?` style="animation-delay:${k*70}ms"`:''}><span class="item-number">${String(d.i+1).padStart(2,'0')}</span><div><h3>${d.name}</h3><p>${d.note}</p></div><span class="price">${money(d.price)}</span><button type="button" data-add="${d.i}" aria-label="Add ${d.name} to sample order">Add +</button></article>`).join('');
+  animateMenu=false;
+  document.querySelector('#order-items').innerHTML=cart.length?cart.map((i,k)=>`<li${k===newLiIndex?' class="new"':''}><span>${drinks[i].name} · ${money(drinks[i].price)}</span><button type="button" data-remove="${k}" aria-label="Remove ${drinks[i].name}">Remove</button></li>`).join(''):'<li>Choose a drink above to start.</li>';
+  newLiIndex=-1;
+  if(!skipTotal)setTotal(cart.reduce((n,i)=>n+drinks[i].price,0));skipTotal=false;
+}
+document.querySelector('.filters').addEventListener('click',e=>{const b=e.target.closest('[data-filter]');if(!b)return;filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));animateMenu=true;render()});
+document.querySelector('#menu-items').addEventListener('click',e=>{
+  const b=e.target.closest('[data-add]');if(!b)return;
+  const i=Number(b.dataset.add),d=drinks[i];
+  const btnRect=b.getBoundingClientRect(),receiptRect=document.querySelector('.receipt').getBoundingClientRect();
+  const oldTotal=cart.reduce((n,x)=>n+drinks[x].price,0);
+  cart.push(i);newLiIndex=cart.length-1;
+  b.classList.add('added');b.textContent='Added';
+  setTimeout(()=>{const live=document.querySelector(`[data-add="${i}"]`);if(live){live.classList.remove('added');live.textContent='Add +'}},1100);
+  const land=()=>{skipTotal=true;render();bumpReceipt();tweenTotal(oldTotal,oldTotal+d.price);setFeedback(d.name+' added to your sample order.')};
+  if(reduceMotion){render();pulse(totalEl);flash(document.querySelector('.receipt'));setFeedback(d.name+' added to your sample order.');return}
+  burst(btnRect);
+  flyChip(btnRect,receiptRect,d.name+' · '+money(d.price),land);
+});
+document.querySelector('#order-items').addEventListener('click',e=>{
+  const b=e.target.closest('[data-remove]');if(!b)return;
+  const k=Number(b.dataset.remove),li=b.closest('li');
+  const finish=()=>{cart.splice(k,1);render();pulse(document.querySelector('#total'));setFeedback('Drink removed from your sample order.')};
+  if(reduceMotion||!li||!li.animate){finish();return}
+  li.animate([{opacity:1,transform:'none'},{opacity:0,transform:'translateX(16px)'}],{duration:200,easing:'ease-in'}).onfinish=finish;
+});
+render();
+if(!reduceMotion&&'IntersectionObserver' in window){
+  const els=document.querySelectorAll('.section-head,.filters,.order>div,.receipt,.policies details,.footer');
+  els.forEach(el=>el.classList.add('reveal'));
+  const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('visible');io.unobserve(en.target)}}),{threshold:.1});
+  els.forEach(el=>io.observe(el));
+}
+const openPolicy=()=>{const target=document.getElementById(location.hash.slice(1));if(target?.tagName==='DETAILS')target.open=true};addEventListener('hashchange',openPolicy);openPolicy();
+</script><script>
+/* Boot loader: min 950ms, hard cap 2s, lifts when loaded. */
+(function(){var boot=document.getElementById('boot');if(!boot)return;var __prm=matchMedia('(prefers-reduced-motion: reduce)').matches;var t0=performance.now();var done=false;
+function hide(){if(done)return;done=true;var wait=Math.max(0,950-(performance.now()-t0));
+setTimeout(function(){if(__prm){boot.style.display='none';return}boot.classList.add('boot-hide');setTimeout(function(){boot.style.display='none'},850)},wait)}
+if(document.readyState==='complete'){hide()}else{window.addEventListener('load',hide);setTimeout(hide,2000)}})();
+
+/* Premium click sound: synthesized in Web Audio, no assets. */
+var __ac=null,__lastTick=0;
+function __audio(){if(!__ac){try{__ac=new (window.AudioContext||window.webkitAudioContext)()}catch(e){return null}}if(__ac&&__ac.state==='suspended'){__ac.resume()}return __ac}
+function __tick(){var a=window.__sfxA;if(!a){a=window.__sfxA=new Audio('data:audio/wav;base64,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');a.preload='auto'}try{a.currentTime=0;a.volume=.30;var p=a.play();if(p&&p.catch)p.catch(function(){})}catch(e){}}
+document.addEventListener('click',function(e){if(typeof e.button==='number'&&e.button!==0)return;var n=performance.now();if(n-__lastTick<60)return;var el=e.target&&e.target.closest?e.target.closest('a,button,summary,[role="button"],input[type="checkbox"],input[type="radio"],select,label'):null;if(!el)return;__lastTick=n;__tick()},{passive:true});
+</script><style id="motion-pass">
+/* ==========================================================================
+   stillroom. — Motion Addendum (Prefix: sr-)
+   Claymorphic tactile physics, masked typography, ambient blobs & reactive UI
+   ========================================================================== */
+
+:root {
+  --sr-cream: #f4e9dc;
+  --sr-terracotta: #b5532f;
+  --sr-sage: #b9d1b0;
+  --sr-butter: #f2c879;
+  --sr-cocoa: #43291f;
+
+  --sr-ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --sr-ease-clay-in: cubic-bezier(0.32, 0, 0.67, 0);
+  --sr-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --sr-ease-soft-spring: cubic-bezier(0.22, 1.28, 0.36, 1);
+  --sr-ease-silk: cubic-bezier(0.25, 1, 0.5, 1);
+
+  --sr-shadow-rest:
+    10px 14px 26px rgba(67, 41, 31, 0.11),
+    -6px -6px 18px rgba(255, 255, 255, 0.72),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.65),
+    inset -3px -4px 7px rgba(67, 41, 31, 0.08);
+
+  --sr-shadow-pressed:
+    3px 4px 10px rgba(67, 41, 31, 0.14),
+    -2px -2px 6px rgba(255, 255, 255, 0.55),
+    inset 4px 5px 9px rgba(67, 41, 31, 0.14),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.75);
+}
+
+/* --------------------------------------------------------------------------
+   1. Hero Headline Word-by-Word Masked Rise
+   -------------------------------------------------------------------------- */
+.sr-word-mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  padding: 0.08em 0.04em 0.14em;
+  margin: -0.08em -0.04em -0.14em;
+  pointer-events: none;
+}
+
+.sr-word-inner {
+  display: inline-block;
+  transform: translate3d(0, 118%, 0) rotate(2.5deg);
+  opacity: 0;
+  transform-origin: 0% 100%;
+  will-change: transform, opacity;
+  transition:
+    transform 0.92s var(--sr-ease-out-expo),
+    opacity 0.55s var(--sr-ease-silk);
+  transition-delay: calc(var(--sr-word-index, 0) * 68ms + 120ms);
+}
+
+.sr-hero-ready .sr-word-inner {
+  transform: translate3d(0, 0%, 0) rotate(0deg);
+  opacity: 1;
+}
+
+/* Subtle secondary entrance for hero concept badge, copy, and CTA */
+.sr-hero-sub {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+  will-change: transform, opacity;
+  transition:
+    transform 0.85s var(--sr-ease-out-expo),
+    opacity 0.65s var(--sr-ease-silk);
+  transition-delay: calc(var(--sr-sub-index, 1) * 110ms + 260ms);
+}
+
+.sr-hero-ready .sr-hero-sub {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* --------------------------------------------------------------------------
+   2. Clay Press Behaviour (Squish + Spring Overshoot)
+   -------------------------------------------------------------------------- */
+.sr-clay-interactive {
+  transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  transition:
+    transform 0.46s var(--sr-ease-spring),
+    box-shadow 0.32s var(--sr-ease-silk),
+    opacity 0.25s ease;
+  will-change: transform;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Button / Filter / CTA squish */
+.sr-clay-btn.sr-is-pressing {
+  transform: translate3d(0, 2px, 0) scale3d(0.935, 0.905, 1) !important;
+  box-shadow: var(--sr-shadow-pressed);
+  transition:
+    transform 0.09s var(--sr-ease-clay-in),
+    box-shadow 0.09s var(--sr-ease-clay-in) !important;
+}
+
+.sr-clay-btn.sr-is-releasing {
+  animation: sr-clay-btn-spring 0.52s var(--sr-ease-out-expo) forwards;
+}
+
+/* Menu Card / Receipt softer pillow squish */
+.sr-clay-card.sr-is-pressing {
+  transform: translate3d(0, 3px, 0) scale3d(0.982, 0.974, 1) !important;
+  box-shadow: var(--sr-shadow-pressed);
+  transition:
+    transform 0.11s var(--sr-ease-clay-in),
+    box-shadow 0.11s var(--sr-ease-clay-in) !important;
+}
+
+.sr-clay-card.sr-is-releasing {
+  animation: sr-clay-card-spring 0.58s var(--sr-ease-out-expo) forwards;
+}
+
+@keyframes sr-clay-btn-spring {
+  0% {
+    transform: translate3d(0, 2px, 0) scale3d(0.935, 0.905, 1);
+  }
+  42% {
+    transform: translate3d(0, -2px, 0) scale3d(1.045, 1.06, 1);
+  }
+  72% {
+    transform: translate3d(0, 0.5px, 0) scale3d(0.99, 0.988, 1);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+}
+
+@keyframes sr-clay-card-spring {
+  0% {
+    transform: translate3d(0, 3px, 0) scale3d(0.982, 0.974, 1);
+  }
+  45% {
+    transform: translate3d(0, -3px, 0) scale3d(1.014, 1.018, 1);
+  }
+  76% {
+    transform: translate3d(0, 0.5px, 0) scale3d(0.997, 0.996, 1);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+}
+
+/* Preserve compatibility with existing .item button.added state */
+article.item button[data-add].added.sr-is-releasing {
+  animation: sr-clay-btn-spring 0.52s var(--sr-ease-out-expo) forwards;
+}
+
+/* --------------------------------------------------------------------------
+   3. Menu Rows: Staggered Pillow Rise-In & Hero-Art Magnetic Tilt
+   -------------------------------------------------------------------------- */
+article.item.sr-pillow-item {
+  opacity: 0;
+  transform: translate3d(0, 34px, 0) scale3d(0.965, 0.955, 1);
+  transform-origin: 50% 100%;
+  will-change: transform, opacity;
+  transition:
+    transform 0.78s var(--sr-ease-soft-spring),
+    opacity 0.55s var(--sr-ease-silk),
+    box-shadow 0.35s var(--sr-ease-silk);
+  transition-delay: calc(var(--sr-item-stagger, 0) * 75ms);
+}
+
+article.item.sr-pillow-item.sr-pillow-in,
+article.item.sr-pillow-item.visible,
+article.item.sr-pillow-item.enter {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+}
+
+/* Magnetic tilt stage on desktop fine pointers */
+@media (hover: hover) and (pointer: fine) {
+  .hero-art.sr-tilt-stage {
+    perspective: 900px;
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+
+  .hero-art.sr-tilt-stage .cup-illustration {
+    transform:
+      translate3d(var(--sr-tilt-x, 0px), var(--sr-tilt-y, 0px), 0)
+      rotateX(var(--sr-rot-x, 0deg))
+      rotateY(var(--sr-rot-y, 0deg));
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+
+  article.item.sr-pillow-item.sr-pillow-in:hover:not(.sr-is-pressing) {
+    transform: translate3d(0, -4px, 0) scale3d(1.01, 1.01, 1);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. Ambient Clay Blobs Behind the Cup (Independent Drift Periods)
+   -------------------------------------------------------------------------- */
+.hero-art {
+  position: relative;
+  isolation: isolate;
+}
+
+.sr-blob-stage {
+  position: absolute;
+  inset: -6%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sr-blob {
+  position: absolute;
+  border-radius: 56% 44% 48% 52% / 47% 55% 45% 53%;
+  opacity: 0.78;
+  will-change: transform;
+  box-shadow:
+    inset 6px 8px 16px rgba(255, 255, 255, 0.55),
+    inset -8px -10px 18px rgba(67, 41, 31, 0.12),
+    12px 18px 32px rgba(67, 41, 31, 0.08);
+}
+
+.sr-blob--butter {
+  width: 58%;
+  height: 58%;
+  top: 8%;
+  left: 10%;
+  background: radial-gradient(circle at 32% 28%, #fae0a4, var(--sr-butter) 72%);
+  animation: sr-blob-drift-a 19s ease-in-out infinite alternate;
+}
+
+.sr-blob--sage {
+  width: 52%;
+  height: 52%;
+  bottom: 9%;
+  right: 8%;
+  border-radius: 46% 54% 58% 42% / 54% 44% 56% 46%;
+  background: radial-gradient(circle at 35% 30%, #d4e6cd, var(--sr-sage) 74%);
+  animation: sr-blob-drift-b 23s ease-in-out -5s infinite alternate;
+}
+
+.sr-blob--terracotta {
+  width: 40%;
+  height: 40%;
+  top: 26%;
+  right: 16%;
+  opacity: 0.52;
+  border-radius: 52% 48% 43% 57% / 49% 56% 44% 51%;
+  background: radial-gradient(circle at 30% 30%, #d27350, var(--sr-terracotta) 78%);
+  animation: sr-blob-drift-c 29s ease-in-out -11s infinite alternate;
+}
+
+@keyframes sr-blob-drift-a {
+  0% {
+    transform: translate3d(-6%, -5%, 0) scale3d(1, 1, 1) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(5%, 7%, 0) scale3d(1.06, 0.95, 1) rotate(8deg);
+  }
+  100% {
+    transform: translate3d(8%, -4%, 0) scale3d(0.96, 1.05, 1) rotate(-6deg);
+  }
+}
+
+@keyframes sr-blob-drift-b {
+  0% {
+    transform: translate3d(6%, 4%, 0) scale3d(1, 1, 1) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(-7%, -6%, 0) scale3d(0.94, 1.07, 1) rotate(-9deg);
+  }
+  100% {
+    transform: translate3d(-4%, 8%, 0) scale3d(1.05, 0.96, 1) rotate(7deg);
+  }
+}
+
+@keyframes sr-blob-drift-c {
+  0% {
+    transform: translate3d(-4%, 6%, 0) scale3d(0.97, 1.03, 1) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(7%, -5%, 0) scale3d(1.08, 0.94, 1) rotate(11deg);
+  }
+  100% {
+    transform: translate3d(-6%, -7%, 0) scale3d(1, 1.04, 1) rotate(-8deg);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. Order Receipt Gentle Clay Bounce on #total Mutation
+   -------------------------------------------------------------------------- */
+.receipt {
+  transform-origin: 50% 60%;
+  will-change: transform;
+}
+
+.receipt.sr-receipt-bounce {
+  animation: sr-order-card-bounce 0.56s var(--sr-ease-out-expo);
+}
+
+#total.sr-total-pop {
+  display: inline-block;
+  animation: sr-total-pop-pulse 0.48s var(--sr-ease-spring);
+}
+
+@keyframes sr-order-card-bounce {
+  0% {
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  26% {
+    transform: translate3d(0, -6px, 0) scale3d(1.022, 1.03, 1);
+  }
+  54% {
+    transform: translate3d(0, 2px, 0) scale3d(0.991, 0.986, 1);
+  }
+  78% {
+    transform: translate3d(0, -1.5px, 0) scale3d(1.005, 1.006, 1);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+}
+
+@keyframes sr-total-pop-pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  40% {
+    transform: scale3d(1.12, 1.14, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. Smooth Section-Title Underline Draw
+   -------------------------------------------------------------------------- */
+.sr-title-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.sr-title-underline {
+  display: block;
+  width: 100%;
+  height: 10px;
+  margin-top: 4px;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.sr-title-underline path {
+  fill: none;
+  stroke: var(--sr-terracotta);
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-dasharray: var(--sr-path-len, 240);
+  stroke-dashoffset: var(--sr-path-len, 240);
+  opacity: 0.85;
+  transition:
+    stroke-dashoffset 1.05s var(--sr-ease-out-expo) 0.12s,
+    opacity 0.4s ease;
+}
+
+.sr-title-drawn .sr-title-underline path {
+  stroke-dashoffset: 0;
+}
+
+/* --------------------------------------------------------------------------
+   7. Mobile 390px Viewport Refinements & Reduced Motion Guard
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .sr-blob-stage {
+    inset: -2%;
+  }
+
+  .sr-blob--butter {
+    width: 52%;
+    height: 52%;
+  }
+
+  .sr-blob--sage {
+    width: 46%;
+    height: 46%;
+  }
+
+  .sr-blob--terracotta {
+    width: 34%;
+    height: 34%;
+  }
+
+  article.item.sr-pillow-item {
+    transform: translate3d(0, 22px, 0) scale3d(0.975, 0.97, 1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sr-word-inner,
+  .sr-hero-sub,
+  .sr-clay-interactive,
+  .sr-clay-btn.sr-is-pressing,
+  .sr-clay-btn.sr-is-releasing,
+  .sr-clay-card.sr-is-pressing,
+  .sr-clay-card.sr-is-releasing,
+  article.item.sr-pillow-item,
+  .hero-art.sr-tilt-stage,
+  .hero-art.sr-tilt-stage .cup-illustration,
+  .sr-blob,
+  .receipt.sr-receipt-bounce,
+  #total.sr-total-pop,
+  .sr-title-underline path {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .sr-title-underline path {
+    stroke-dashoffset: 0 !important;
+    opacity: 0.85 !important;
+  }
+}
+
+</style><script>
+(function () {
+  'use strict';
+
+  var motionQuery = window.matchMedia
+    ? window.matchMedia('(prefers-reduced-motion: reduce)')
+    : { matches: false };
+
+  function isReducedMotion() {
+    return Boolean(motionQuery && motionQuery.matches);
+  }
+
+  /* ------------------------------------------------------------------------
+     1. Hero Headline Word-by-Word Masked Rise (Accessible, No Layout Shift)
+     ------------------------------------------------------------------------ */
+  function initHeroHeadline() {
+    var hero = document.querySelector('section.hero');
+    if (!hero) return;
+
+    var h1 = hero.querySelector('h1');
+    if (h1 && !h1.hasAttribute('data-sr-split')) {
+      var fullText = (h1.textContent || '').replace(/\s+/g, ' ').trim();
+      if (fullText) {
+        h1.setAttribute('aria-label', fullText);
+        h1.setAttribute('data-sr-split', 'true');
+
+        var wordIndex = 0;
+
+        var wrapWordsInNode = function (node) {
+          if (!node) return null;
+
+          if (node.nodeType === Node.TEXT_NODE) {
+            var text = node.nodeValue || '';
+            if (!text.trim()) {
+              return document.createTextNode(text);
+            }
+            var frag = document.createDocumentFragment();
+            var tokens = text.split(/(\s+)/);
+            for (var i = 0; i < tokens.length; i++) {
+              var token = tokens[i];
+              if (!token) continue;
+              if (/^\s+$/.test(token)) {
+                frag.appendChild(document.createTextNode(token));
+              } else {
+                var outer = document.createElement('span');
+                outer.className = 'sr-word-mask';
+                outer.setAttribute('aria-hidden', 'true');
+
+                var inner = document.createElement('span');
+                inner.className = 'sr-word-inner';
+                inner.style.setProperty('--sr-word-index', String(wordIndex++));
+                inner.textContent = token;
+
+                outer.appendChild(inner);
+                frag.appendChild(outer);
+              }
+            }
+            return frag;
+          }
+
+          if (node.nodeType === Node.ELEMENT_NODE) {
+            var clone = node.cloneNode(false);
+            clone.setAttribute('aria-hidden', 'true');
+            var children = Array.prototype.slice.call(node.childNodes);
+            for (var j = 0; j < children.length; j++) {
+              var wrappedChild = wrapWordsInNode(children[j]);
+              if (wrappedChild) clone.appendChild(wrappedChild);
+            }
+            return clone;
+          }
+
+          return null;
+        };
+
+        var originalChildren = Array.prototype.slice.call(h1.childNodes);
+        var replacementFrag = document.createDocumentFragment();
+        for (var k = 0; k < originalChildren.length; k++) {
+          var processed = wrapWordsInNode(originalChildren[k]);
+          if (processed) replacementFrag.appendChild(processed);
+        }
+        h1.innerHTML = '';
+        h1.appendChild(replacementFrag);
+      }
+    }
+
+    var heroCopyCol = hero.querySelector('div:not(.hero-art)');
+    if (heroCopyCol) {
+      var subTargets = heroCopyCol.querySelectorAll('span.concept, p, a');
+      for (var s = 0; s < subTargets.length; s++) {
+        subTargets[s].classList.add('sr-hero-sub');
+        subTargets[s].style.setProperty('--sr-sub-index', String(s + 1));
+      }
+    }
+
+    if (isReducedMotion()) {
+      hero.classList.add('sr-hero-ready');
+      return;
+    }
+
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        hero.classList.add('sr-hero-ready');
+      });
+    });
+  }
+
+  /* ------------------------------------------------------------------------
+     2. Clay Press Behaviour (Pointer Down Squish + Spring Release Overshoot)
+     ------------------------------------------------------------------------ */
+  function initClayPress() {
+    var btnSelector =
+      'header.nav a.brand, header.nav nav.nav-links a, section.hero a, .filters button[data-filter], article.item button[data-add], .policies details summary';
+    var cardSelector = 'article.item, section#order .receipt';
+
+    function tagElements() {
+      var btns = document.querySelectorAll(btnSelector);
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].classList.add('sr-clay-interactive', 'sr-clay-btn');
+      }
+      var cards = document.querySelectorAll(cardSelector);
+      for (var j = 0; j < cards.length; j++) {
+        cards[j].classList.add('sr-clay-interactive', 'sr-clay-card');
+      }
+    }
+
+    tagElements();
+
+    var activeTarget = null;
+
+    function releaseElement(el, withSpring) {
+      if (!el) return;
+      el.classList.remove('sr-is-pressing');
+      if (withSpring && !isReducedMotion()) {
+        el.classList.remove('sr-is-releasing');
+        void el.offsetWidth;
+        el.classList.add('sr-is-releasing');
+      }
+    }
+
+    document.addEventListener(
+      'pointerdown',
+      function (e) {
+        if (isReducedMotion()) return;
+        if (e.button && e.button !== 0) return;
+
+        var target = e.target && e.target.closest
+          ? e.target.closest(btnSelector + ', ' + cardSelector)
+          : null;
+        if (!target) return;
+
+        if (!target.classList.contains('sr-clay-interactive')) {
+          var isBtn = target.matches ? target.matches(btnSelector) : false;
+          target.classList.add('sr-clay-interactive', isBtn ? 'sr-clay-btn' : 'sr-clay-card');
+        }
+
+        activeTarget = target;
+        target.classList.remove('sr-is-releasing');
+        target.classList.add('sr-is-pressing');
+      },
+      { passive: true }
+    );
+
+    document.addEventListener(
+      'pointerup',
+      function () {
+        if (!activeTarget) return;
+        var el = activeTarget;
+        activeTarget = null;
+        releaseElement(el, true);
+      },
+      { passive: true }
+    );
+
+    document.addEventListener(
+      'pointercancel',
+      function () {
+        if (!activeTarget) return;
+        var el = activeTarget;
+        activeTarget = null;
+        releaseElement(el, false);
+      },
+      { passive: true }
+    );
+
+    document.addEventListener(
+      'animationend',
+      function (e) {
+        if (
+          e.animationName === 'sr-clay-btn-spring' ||
+          e.animationName === 'sr-clay-card-spring'
+        ) {
+          if (e.target && e.target.classList) {
+            e.target.classList.remove('sr-is-releasing');
+          }
+        }
+      },
+      { passive: true }
+    );
+
+    var menuContainer = document.querySelector('#menu-items');
+    if (menuContainer && typeof MutationObserver !== 'undefined') {
+      var menuDomObserver = new MutationObserver(function () {
+        tagElements();
+      });
+      menuDomObserver.observe(menuContainer, { childList: true });
+    }
+  }
+
+  /* ------------------------------------------------------------------------
+     3A. Menu Rows: Staggered Pillow Rise-In on Scroll & Filter Switch
+     ------------------------------------------------------------------------ */
+  function initMenuPillowRise() {
+    var menuContainer = document.querySelector('#menu-items');
+    if (!menuContainer) return;
+
+    var io = null;
+
+    function setupItems() {
+      var items = menuContainer.querySelectorAll('article.item');
+      if (!items.length) return;
+
+      for (var i = 0; i < items.length; i++) {
+        var item = items[i];
+        item.classList.add('sr-pillow-item');
+        item.style.setProperty('--sr-item-stagger', String(i % 6));
+
+        if (
+          isReducedMotion() ||
+          item.classList.contains('visible') ||
+          item.classList.contains('enter')
+        ) {
+          item.classList.add('sr-pillow-in');
+        } else if (io) {
+          io.observe(item);
+        }
+      }
+    }
+
+    if ('IntersectionObserver' in window && !isReducedMotion()) {
+      var batchQueue = [];
+      var batchTimer = null;
+
+      io = new IntersectionObserver(
+        function (entries) {
+          for (var i = 0; i < entries.length; i++) {
+            var entry = entries[i];
+            if (entry.isIntersecting) {
+              batchQueue.push(entry.target);
+              io.unobserve(entry.target);
+            }
+          }
+
+          if (batchQueue.length && !batchTimer) {
+            batchTimer = window.setTimeout(function () {
+              for (var j = 0; j < batchQueue.length; j++) {
+                batchQueue[j].style.setProperty('--sr-item-stagger', String(j));
+                batchQueue[j].classList.add('sr-pillow-in');
+              }
+              batchQueue = [];
+              batchTimer = null;
+            }, 16);
+          }
+        },
+        { rootMargin: '0px 0px -8% 0px', threshold: 0.1 }
+      );
+    }
+
+    setupItems();
+
+    var filters = document.querySelectorAll('.filters button[data-filter]');
+    for (var f = 0; f < filters.length; f++) {
+      filters[f].addEventListener('click', function () {
+        if (isReducedMotion()) return;
+        requestAnimationFrame(function () {
+          var currentItems = menuContainer.querySelectorAll('article.item');
+          var visibleIdx = 0;
+          for (var c = 0; c < currentItems.length; c++) {
+            var el = currentItems[c];
+            if (el.offsetParent !== null) {
+              el.classList.add('sr-pillow-item');
+              el.classList.remove('sr-pillow-in');
+              el.style.setProperty('--sr-item-stagger', String(visibleIdx++));
+              void el.offsetWidth;
+              el.classList.add('sr-pillow-in');
+            }
+          }
+        });
+      });
+    }
+
+    if (typeof MutationObserver !== 'undefined') {
+      var childObserver = new MutationObserver(function () {
+        setupItems();
+      });
+      childObserver.observe(menuContainer, { childList: true });
+    }
+  }
+
+  /* ------------------------------------------------------------------------
+     3B. Subtle Magnetic Tilt of Hero-Art Card (Desktop Fine Pointer Only)
+     ------------------------------------------------------------------------ */
+  function initHeroMagneticTilt() {
+    var heroArt = document.querySelector('section.hero .hero-art');
+    if (!heroArt) return;
+
+    var finePointerQuery = window.matchMedia
+      ? window.matchMedia('(hover: hover) and (pointer: fine)')
+      : { matches: false };
+
+    if (!finePointerQuery.matches) return;
+
+    heroArt.classList.add('sr-tilt-stage');
+
+    var targetX = 0;
+    var targetY = 0;
+    var currentX = 0;
+    var currentY = 0;
+    var rafId = null;
+
+    function tick() {
+      if (isReducedMotion()) {
+        heroArt.style.setProperty('--sr-rot-x', '0deg');
+        heroArt.style.setProperty('--sr-rot-y', '0deg');
+        heroArt.style.setProperty('--sr-tilt-x', '0px');
+        heroArt.style.setProperty('--sr-tilt-y', '0px');
+        rafId = null;
+        return;
+      }
+
+      currentX += (targetX - currentX) * 0.1;
+      currentY += (targetY - currentY) * 0.1;
+
+      var rotY = (currentX * 6.5).toFixed(2) + 'deg';
+      var rotX = (-currentY * 6.5).toFixed(2) + 'deg';
+      var shiftX = (currentX * 9).toFixed(2) + 'px';
+      var shiftY = (currentY * 9).toFixed(2) + 'px';
+
+      heroArt.style.setProperty('--sr-rot-x', rotX);
+      heroArt.style.setProperty('--sr-rot-y', rotY);
+      heroArt.style.setProperty('--sr-tilt-x', shiftX);
+      heroArt.style.setProperty('--sr-tilt-y', shiftY);
+
+      if (
+        Math.abs(targetX - currentX) > 0.002 ||
+        Math.abs(targetY - currentY) > 0.002
+      ) {
+        rafId = requestAnimationFrame(tick);
+      } else {
+        rafId = null;
+      }
+    }
+
+    function startLoop() {
+      if (!rafId && !isReducedMotion()) {
+        rafId = requestAnimationFrame(tick);
+      }
+    }
+
+    heroArt.addEventListener(
+      'pointermove',
+      function (e) {
+        if (!finePointerQuery.matches || isReducedMotion()) return;
+        var rect = heroArt.getBoundingClientRect();
+        if (!rect.width || !rect.height) return;
+
+        var nx = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
+        var ny = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
+
+        targetX = Math.max(-1, Math.min(1, nx));
+        targetY = Math.max(-1, Math.min(1, ny));
+        startLoop();
+      },
+      { passive: true }
+    );
+
+    heroArt.addEventListener(
+      'pointerleave',
+      function () {
+        targetX = 0;
+        targetY = 0;
+        startLoop();
+      },
+      { passive: true }
+    );
+  }
+
+  /* ------------------------------------------------------------------------
+     4. Ambient Drifting Clay Blobs Behind the Cup
+     ------------------------------------------------------------------------ */
+  function initHeroBlobs() {
+    var heroArt = document.querySelector('section.hero .hero-art');
+    if (!heroArt) return;
+    if (heroArt.querySelector('.sr-blob-stage')) return;
+
+    var stage = document.createElement('div');
+    stage.className = 'sr-blob-stage';
+    stage.setAttribute('aria-hidden', 'true');
+
+    var variants = ['butter', 'sage', 'terracotta'];
+    for (var i = 0; i < variants.length; i++) {
+      var blob = document.createElement('span');
+      blob.className = 'sr-blob sr-blob--' + variants[i];
+      stage.appendChild(blob);
+    }
+
+    heroArt.insertBefore(stage, heroArt.firstChild);
+  }
+
+  /* ------------------------------------------------------------------------
+     5. Order Card Gentle Bounce on #total MutationObserver
+     ------------------------------------------------------------------------ */
+  function initOrderTotalObserver() {
+    var totalEl = document.querySelector('#total');
+    var receiptEl = document.querySelector('section#order .receipt');
+    if (!totalEl || !receiptEl || typeof MutationObserver === 'undefined') return;
+
+    var lastValue = (totalEl.textContent || '').trim();
+    var lastBounceTime = 0;
+
+    function triggerBounce() {
+      if (isReducedMotion()) return;
+      var now = performance.now ? performance.now() : Date.now();
+      if (now - lastBounceTime < 340) return;
+      lastBounceTime = now;
+
+      receiptEl.classList.remove('sr-receipt-bounce');
+      totalEl.classList.remove('sr-total-pop');
+      void receiptEl.offsetWidth;
+      receiptEl.classList.add('sr-receipt-bounce');
+      totalEl.classList.add('sr-total-pop');
+    }
+
+    receiptEl.addEventListener(
+      'animationend',
+      function (e) {
+        if (e.animationName === 'sr-order-card-bounce') {
+          receiptEl.classList.remove('sr-receipt-bounce');
+        }
+      },
+      { passive: true }
+    );
+
+    totalEl.addEventListener(
+      'animationend',
+      function (e) {
+        if (e.animationName === 'sr-total-pop-pulse') {
+          totalEl.classList.remove('sr-total-pop');
+        }
+      },
+      { passive: true }
+    );
+
+    var observer = new MutationObserver(function () {
+      var currentValue = (totalEl.textContent || '').trim();
+      if (currentValue !== lastValue) {
+        lastValue = currentValue;
+        triggerBounce();
+      }
+    });
+
+    observer.observe(totalEl, {
+      childList: true,
+      characterData: true,
+      subtree: true
+    });
+  }
+
+  /* ------------------------------------------------------------------------
+     6. Smooth Section-Title Underline Draw on Scroll
+     ------------------------------------------------------------------------ */
+  function initSectionUnderlines() {
+    var headings = document.querySelectorAll(
+      'section#menu .section-head h2, section#order h2, .section .section-head h2'
+    );
+    if (!headings.length) return;
+
+    var svgNS = 'http://www.w3.org/2000/svg';
+    var observedHeadings = [];
+
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      if (h.classList.contains('sr-title-wrap')) continue;
+      h.classList.add('sr-title-wrap');
+
+      var svg = document.createElementNS(svgNS, 'svg');
+      svg.setAttribute('class', 'sr-title-underline');
+      svg.setAttribute('viewBox', '0 0 220 10');
+      svg.setAttribute('preserveAspectRatio', 'none');
+      svg.setAttribute('aria-hidden', 'true');
+
+      var path = document.createElementNS(svgNS, 'path');
+      path.setAttribute('d', 'M 4 6.5 Q 110 2.2 216 5.8');
+      svg.appendChild(path);
+      h.appendChild(svg);
+
+      try {
+        var len = Math.ceil(path.getTotalLength());
+        if (len > 0) {
+          path.style.setProperty('--sr-path-len', String(len));
+        }
+      } catch (_) {
+        path.style.setProperty('--sr-path-len', '220');
+      }
+
+      if (isReducedMotion()) {
+        h.classList.add('sr-title-drawn');
+      } else {
+        observedHeadings.push(h);
+      }
+    }
+
+    if ('IntersectionObserver' in window && observedHeadings.length) {
+      var titleIO = new IntersectionObserver(
+        function (entries) {
+          for (var j = 0; j < entries.length; j++) {
+            if (entries[j].isIntersecting) {
+              entries[j].target.classList.add('sr-title-drawn');
+              titleIO.unobserve(entries[j].target);
+            }
+          }
+        },
+        { rootMargin: '0px 0px -12% 0px', threshold: 0.25 }
+      );
+
+      for (var k = 0; k < observedHeadings.length; k++) {
+        titleIO.observe(observedHeadings[k]);
+      }
+    } else {
+      for (var m = 0; m < observedHeadings.length; m++) {
+        observedHeadings[m].classList.add('sr-title-drawn');
+      }
+    }
+  }
+
+  /* ------------------------------------------------------------------------
+     Boot & Reduced-Motion Live Listener
+     ------------------------------------------------------------------------ */
+  function bootStillroomMotion() {
+    initHeroBlobs();
+    initHeroHeadline();
+    initClayPress();
+    initMenuPillowRise();
+    initHeroMagneticTilt();
+    initOrderTotalObserver();
+    initSectionUnderlines();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bootStillroomMotion, { once: true });
+  } else {
+    bootStillroomMotion();
+  }
+
+  if (motionQuery && typeof motionQuery.addEventListener === 'function') {
+    motionQuery.addEventListener('change', function (e) {
+      if (e.matches) {
+        var hero = document.querySelector('section.hero');
+        if (hero) hero.classList.add('sr-hero-ready');
+
+        var items = document.querySelectorAll('article.item.sr-pillow-item');
+        for (var i = 0; i < items.length; i++) {
+          items[i].classList.add('sr-pillow-in');
+        }
+
+        var titles = document.querySelectorAll('.sr-title-wrap');
+        for (var j = 0; j < titles.length; j++) {
+          titles[j].classList.add('sr-title-drawn');
+        }
+      }
+    });
+  }
+})();
+
+</script></body></html>
+
